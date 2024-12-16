@@ -1,4 +1,6 @@
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private int id;
     public static int idCounter;
     private static String password="employeesPassword";
@@ -7,7 +9,11 @@ public class Employee {
         this.name=name;
     }
 
-    public static void setPassword(String oldPassword,String password) {
+    public String getName() {
+        return name;
+    }
+
+    public static void setPassword(String oldPassword, String password) {
         if(oldPassword.equals(Employee.password))
             Employee.password = password;
     }

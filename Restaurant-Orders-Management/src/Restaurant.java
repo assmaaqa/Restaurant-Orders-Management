@@ -1,18 +1,16 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Restaurant {
-    private String name;
-    private Manager manager;
-    private int ordersCounter;
-    private double dailyReturns;
-    public ArrayList<Employee> employees;
-    public Queue<Order> orders;
-    public PriorityQueue<Recipe> recipes;
-    public PriorityQueue<Customer> customers;
-    public Restaurant(String name,Manager manager){
-        this.name=name;
-        this.manager=manager;
-    }
+    private final static String name="restaurant";
+    private static Manager manager=new Manager();
+    private static int ordersCounter;
+    private static double dailyReturns;
+    public static ArrayList<Employee> employees=new ArrayList<>();
+    public static Queue<Order> orders=new LinkedList<>();
+    public static PriorityQueue<Recipe> recipes=new PriorityQueue<>();
+    public static PriorityQueue<Customer> customers=new PriorityQueue<>();
+
 }

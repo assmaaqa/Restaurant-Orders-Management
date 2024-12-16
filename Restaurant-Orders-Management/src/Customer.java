@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer implements Serializable {
     private int id;
     public static int idCounter;
     private String name;
@@ -8,7 +9,7 @@ public class Customer {
     private int discountPercent;
     private int ordersCounter;
     private String address;
-    public Customer(String name,ArrayList<Order> orders,int discountPercent,String address){
+    public Customer(String name, ArrayList<Order> orders, int discountPercent, String address){
         idCounter++;
         id=idCounter;
         ordersCounter++;

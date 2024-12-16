@@ -1,6 +1,7 @@
 public class Manager {
     private String password;
     public Manager(){
+
     }
 
     public void setPassword(String password, String oldPassword) {
