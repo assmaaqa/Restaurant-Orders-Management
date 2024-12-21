@@ -7,6 +7,7 @@ public class Employee implements Serializable {
     private String name;
     public Employee(String name){
         this.name=name;
+        this.id=idCounter;
     }
 
     public String getName() {
